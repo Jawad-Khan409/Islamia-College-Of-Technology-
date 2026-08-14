@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Islamia College</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+<div class="auth-glow"></div>
+<a href="index.html" class="auth-brand"><span class="brand-mark">IC</span> Islamia <b>College</b></a>
+<main class="auth-shell">
+  <section class="auth-info">
+    <span class="kicker">STUDENT PORTAL</span><h1>Welcome<br><span>back.</span></h1>
+    <p>Sign in to explore your courses, academic progress and student dashboard.</p>
+    <div class="auth-points"><div>✓ Quick student access</div><div>✓ Mobile-friendly portal</div><div>✓ Secure-looking demo UI</div></div>
+  </section>
+  <section class="auth-card glass">
+    <div class="auth-heading"><span class="icon-box">→</span><h2>Sign in</h2><p>Use your demo account details.</p></div>
+    <form id="loginForm">
+      <label>Email address<input id="loginEmail" type="email" placeholder="student@example.com" required></label>
+      <label>Password<div class="password-wrap"><input id="loginPassword" type="password" placeholder="••••••••" required><button type="button" class="pass-toggle">Show</button></div></label>
+      <div class="form-row"><label class="check"><input type="checkbox"> Remember me</label><a href="#" class="text-link">Forgot password?</a></div>
+      <button class="btn full" type="submit">Sign In <span>↗</span></button>
+      <p class="form-note" id="loginMessage"></p>
+    </form>
+    <div class="divider"><span>OR</span></div>
+    <p class="switch">Don't have an account? <a href="signup.html">Create one</a></p>
+  </section>
+</main>
+<script src="script.js"></script><script src="auth.js"></script>
+</body></html>

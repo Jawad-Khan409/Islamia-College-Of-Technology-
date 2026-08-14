@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up | Islamia College</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+<div class="auth-glow"></div>
+<a href="index.html" class="auth-brand"><span class="brand-mark">IC</span> Islamia <b>College</b></a>
+<main class="auth-shell signup-shell">
+<section class="auth-info"><span class="kicker">ADMISSION</span><h1>Create your<br><span>student profile.</span></h1><p>Register a demo account and continue to the student portal.</p><div class="auth-points"><div>✓ Simple registration</div><div>✓ Choose your program</div><div>✓ Instant dashboard access</div></div></section>
+<section class="auth-card glass">
+<div class="auth-heading"><span class="icon-box">+</span><h2>Create account</h2><p>Fill in your basic details.</p></div>
+<form id="signupForm">
+<div class="two-input"><label>Full name<input id="signupName" type="text" placeholder="Your full name" required></label><label>Student ID<input id="signupId" type="text" placeholder="IC-2026-001" required></label></div>
+<label>Email address<input id="signupEmail" type="email" placeholder="student@example.com" required></label>
+<div class="two-input"><label>Program<select id="signupProgram"><option>Computer Science</option><option>Pre-Medical</option><option>Commerce</option><option>Arts & Humanities</option></select></label><label>Semester<select id="signupSemester"><option>1st Semester</option><option>2nd Semester</option><option>3rd Semester</option><option>4th Semester</option></select></label></div>
+<label>Password<div class="password-wrap"><input id="signupPassword" type="password" placeholder="Minimum 6 characters" minlength="6" required><button type="button" class="pass-toggle">Show</button></div></label>
+<label class="check terms"><input type="checkbox" required> I agree to the demo terms and conditions.</label>
+<button class="btn full" type="submit">Create Account <span>↗</span></button>
+<p class="form-note" id="signupMessage"></p>
+</form><div class="divider"><span>OR</span></div><p class="switch">Already registered? <a href="login.html">Sign in</a></p>
+</section></main>
+<script src="script.js"></script><script src="auth.js"></script>
+</body></html>

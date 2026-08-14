@@ -1,0 +1,9 @@
+const STORE="islamiaCollegeDemoUser";
+function getUser(){try{return JSON.parse(localStorage.getItem(STORE))}catch{return null}}
+const signup=document.getElementById("signupForm");
+if(signup)signup.addEventListener("submit",e=>{e.preventDefault();const user={name:signupName.value.trim(),id:signupId.value.trim(),email:signupEmail.value.trim(),program:signupProgram.value,semester:signupSemester.value,password:signupPassword.value};localStorage.setItem(STORE,JSON.stringify(user));signupMessage.textContent="Account created successfully. Redirecting…";setTimeout(()=>location.href="dashboard.html",500)});
+const login=document.getElementById("loginForm");
+if(login)login.addEventListener("submit",e=>{e.preventDefault();const u=getUser(),email=loginEmail.value.trim(),pass=loginPassword.value;if(!u){loginMessage.textContent="No demo account found. Please sign up first.";loginMessage.style.color="#ff9a9a";return}if(u.email!==email||u.password!==pass){loginMessage.textContent="Email or password is incorrect.";loginMessage.style.color="#ff9a9a";return}loginMessage.textContent="Login successful. Opening dashboard…";setTimeout(()=>location.href="dashboard.html",500)});
+const nameEl=document.getElementById("studentName");const profile=document.getElementById("profileName");const details=document.getElementById("profileDetails");const welcome=document.getElementById("welcomeUser");
+if(nameEl){const u=getUser();if(!u){location.href="login.html"}else{nameEl.textContent=u.name.split(" ")[0];profile.textContent=u.name;details.textContent=`${u.program} · ${u.semester} · ${u.id}`;welcome.textContent=u.name}}
+const logout=document.getElementById("logoutBtn");if(logout)logout.addEventListener("click",()=>{location.href="index.html"});

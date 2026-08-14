@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Islamia College</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+<header class="dash-nav"><div class="container dash-nav-inner"><a class="brand" href="index.html"><span class="brand-mark">IC</span><span>Islamia <b>College</b></span></a><div class="dash-actions"><span class="welcome-user" id="welcomeUser">Student</span><button id="logoutBtn" class="btn btn-sm btn-ghost">Logout</button></div></div></header>
+<main class="container dashboard">
+<div class="dash-hero"><div><span class="kicker">STUDENT DASHBOARD</span><h1>Good to see you, <span id="studentName">Student</span>.</h1><p>Here is your academic snapshot for the current semester.</p></div><div class="date-card">2026<br><small>Academic Year</small></div></div>
+<div class="stat-grid"><div class="stat-card"><span>Attendance</span><strong>91%</strong><small>↑ 4% this month</small></div><div class="stat-card"><span>Current GPA</span><strong>3.72</strong><small>Excellent standing</small></div><div class="stat-card"><span>Courses</span><strong>06</strong><small>4 completed · 2 active</small></div><div class="stat-card"><span>Assignments</span><strong>12</strong><small>3 due this week</small></div></div>
+<div class="dash-grid">
+<section class="panel"><div class="panel-head"><div><span class="kicker">MY COURSES</span><h2>Current semester</h2></div><button class="icon-btn">•••</button></div>
+<div class="course-row"><span class="course-icon">CS</span><div><b>Web Development</b><small>HTML · CSS · JavaScript</small></div><strong>92%</strong></div>
+<div class="course-row"><span class="course-icon">DB</span><div><b>Database Systems</b><small>SQL · Data modeling</small></div><strong>86%</strong></div>
+<div class="course-row"><span class="course-icon">EN</span><div><b>English Communication</b><small>Writing · Presentation</small></div><strong>89%</strong></div>
+</section>
+<section class="panel"><div class="panel-head"><div><span class="kicker">UPCOMING</span><h2>Next activities</h2></div></div>
+<div class="activity"><span class="activity-date">18<br><small>AUG</small></span><div><b>Web Development Quiz</b><small>10:00 AM · Lab 02</small></div></div>
+<div class="activity"><span class="activity-date">20<br><small>AUG</small></span><div><b>Database Assignment</b><small>11:59 PM · Online</small></div></div>
+<div class="activity"><span class="activity-date">24<br><small>AUG</small></span><div><b>Semester Project Review</b><small>09:30 AM · Room 14</small></div></div>
+</section>
+</div>
+<div class="dashboard-bottom panel"><div><span class="kicker">PROFILE</span><h2 id="profileName">Student Profile</h2><p id="profileDetails">Program · Semester · Student ID</p></div><a href="index.html" class="btn btn-ghost">Back to website</a></div>
+</main>
+<script src="script.js"></script><script src="auth.js"></script>
+</body></html>
